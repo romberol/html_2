@@ -84,9 +84,6 @@ body {
     #sign-in{
         font-size: 20px;
     }
-    /* #sign-in{
-
-    } */
 }
 
 
@@ -175,7 +172,6 @@ body {
     .tickets-tabs{
         margin-left: 8%;
         gap: 10px;
-        /* padding-left: 10px; */
     }
 }
 
@@ -183,7 +179,6 @@ body {
     .tickets-input {
         display: flex;
       flex-direction: column;
-      /* align-items: center; */
       margin: 0% 5%;
     }
 
@@ -206,30 +201,7 @@ body {
     .tickets-tabs{
         margin-left: 5%;
     }
-  }
-
-  /* @media (max-width: 768px) {
-    .tickets-input {
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-    }
-  
-    .tickets-input form {
-      width: 100%;
-    }
-  
-    .tickets-input-plane,
-    .date {
-      width: 30px;
-      height: 30px;
-      padding: 0;
-    }
-  
-    .tickets-search {
-      width: 100%;
-    }
-  } */
+}
   
 
 @media screen and (max-width: 650px) {
@@ -265,11 +237,9 @@ body {
     fill: white;
 }
 
-
 /* offers */
 
 .offers h3{
-    /* text-align: center; */
     margin: 10% 0% 0% 0%;
     font-size: 45px;
 }
@@ -286,7 +256,6 @@ body {
 .offers-tabs label {
     font-size: 18px;
     padding: 10px;
-    /* cursor: pointer; */
     transition: all 0.3s ease;
 }
   
@@ -367,12 +336,9 @@ body {
 .row4{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     width: 90%;
     margin-left: 20px;
-    /* margin-right: 20px; */
     font-size: 25px;
-    /* background-color: black; */
 }
 
 
@@ -392,7 +358,6 @@ body {
 
 .description{
     display: flex;
-    /* flex-direction: row; */
     gap: 10%;
     justify-content: space-between;
     margin: 0% 10%;
@@ -400,12 +365,6 @@ body {
 
 .aside{
     position: relative;
-    /* margin-left: 10%; */
-    /* width: 40%; */
-    /* float: left; */
-    /* box-shadow: inset 5px 0 5px -5px #29627e; */
-    /* font-style: italic; */
-    /* color: #29627e; */
 }
 
 .extra-info1, 
@@ -420,7 +379,6 @@ body {
     padding: 20px 40px;
     font-weight: 400;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);;
-    /* width: 30px; */
 }
 
 .extra-info1{
@@ -509,11 +467,6 @@ body {
     border-radius: 10px 10px;
     color: #3E86F5;
 }
-/* 
-.rec-cards{
-    display: inline-flex;
-    gap:10px
-} */
 
 .rec-card{
     display: inline-flex;
@@ -646,8 +599,6 @@ body {
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
-    /* width: 300px; */
     height: 500px;
     object-fit: cover;
 }
