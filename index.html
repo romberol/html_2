@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=S, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
         <title>Trello</title>
     </head>
     <body>
@@ -23,46 +24,54 @@
         <main class="main">
             <section class="banner-text">
                 <h1 class="banner-header">Discover Your Life, Travel Where You Want</h1>
-                <h3 class="banner-subheader">Would you explore nature paradise in the world, let’s find the best destination in world with us.</h3>
+                <p class="banner-subheader">Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
             </section>
             <section class="tickets">
                 <div class="tickets-tabs">
                     <input type="radio" id="flight-button" name="inputs" checked/>
                     <label for="flight-button">
                         <img class="plane-img" src="./icons/flight.png" alt="airplane">
-                        Flight
+                        <span>Flight</span>
                     </label>
                     <input type="radio" id="hotel-button" name="inputs" />
                     <label for="hotel-button">
                         <img class="hotel-img" src="./icons/hotel.png" alt="hotel">
-                        Hotel
+                        <span>Hotel</span>
                     </label>
                 </div>
-                <form class="tickets-input">
+                <div class="tickets-input">
                     <form class="airport-selection">
-                        <span>Living From</span>
-                        <select class="living-from">
-                            <option class="living-from-option">Dubai</option>
-                            <option class="living-from-option">London</option>
-                            <option class="living-from-option">Mykolaiv</option>
-                        </select>
+                        <span>
+                            Living From
+                            <select class="living-from">
+                                <option class="living-from-option">Dubai</option>
+                                <option class="living-from-option">London</option>
+                                <option class="living-from-option">Mykolaiv</option>
+                            </select>
+                        </span>
                         <img class="tickets-input-plane" src="./icons/grey_plane.png" alt="plane"/>
-                        <span>Going to</span>
-                        <select class="living-from">
-                            <option class="living-from-option">New York</option>
-                            <option class="living-from-option">Lviv</option>
-                            <option class="living-from-option">Berlin</option>
-                        </select>
+                        <span>
+                            Going to
+                            <select class="living-from">
+                                <option class="living-from-option">New York</option>
+                                <option class="living-from-option">Lviv</option>
+                                <option class="living-from-option">Berlin</option>
+                            </select>
+                        </span>
                     </form>
                     <form class="date-selection">
-                        <span>Leave</span><img class="blue-plane" src="./icons/blue_plane.png" alt="blue plane"/>
-                        <input type="date" id="date"/>
+                        <section>
+                            <span>Leave<img class="blue-plane" src="./icons/blue_plane.png" alt="blue plane"/></span>
+                            <input type="date" id="date" value="2023-06-03"/>
+                        </section>
                         <img class="date" src="./icons/calendar.png" alt="calendar"/>
-                        <span>Return</span><img class="blue-plane" src="./icons/blue_plane.png" alt="blue plane"/>
-                        <input type="date" id="date"/>
+                        <section>
+                            <span>Return<img class="blue-plane" src="./icons/blue_plane.png" alt="blue plane" style="transform: scaleX(-1);"/></span>
+                            <input type="date" id="date2" value="2023-07-03"/>
+                        </section>
                     </form>
                     <button class="tickets-search"><img class="search" src="./icons/search.svg" alt="search"></button>
-                </form>
+                </div>
             </section>
             <section class="offers">
                 <h3>Special Upcoming Offers</h3>
@@ -76,45 +85,69 @@
                 </div>
                 <div class="offers-cards">
                     <div class="offer-card">
-                        <img class="offer-img" src="./icons/logan_sea.png" alr="Beach"/>
-                        <span class="vertical-text">14 FEB 2022</span>
-                        <span class="relax-tag">Relax</span>
-                        <span class="duration">3 Days, 3 Nights</span>
-                        <p class="card-name">Loga Sea</p>
-                        <p class="price">700$/Person</p>
-                        <button class="book-button">Book Now</button>
+                        <section class="row1">
+                            <img class="offer-img" src="./icons/logan_sea.png" alr="Beach"/>
+                            <span class="vertical-text">14 FEB 2022</span>
+                        </section>
+                        <section class="row2">
+                            <span class="tag">Relax</span>
+                            <span class="duration">3 Days, 3 Nights</span>
+                        </section>
+                        <section class="row3">
+                            <p class="card-name">Loga Sea</p>
+                        </section>
+                        <section class="row4">
+                            <p class="price">700$<span>/Person</span></p>
+                            <button class="book-button">Book Now</button>
+                        </section>
                     </div>
                     <div class="offer-card">
-                        <img class="offer-img" src="./icons/scheffold.png" alr="sea"/>
-                        <span class="vertical-text">18 JUN 2022</span>
-                        <span class="adventure-tag">Adventure</span>
-                        <span class="duration">4 Days, 3 Nights</span>
-                        <p class="card-name">Ansgar Scheffold</p>
-                        <p class="price">400$/Person</p>
-                        <button class="book-button">Book Now</button>
+                        <section class="row1">
+                            <img class="offer-img" src="./icons/scheffold.png" alr="sea"/>
+                            <span class="vertical-text">18 JUN 2022</span>
+                        </section>
+                        <section class="row2">
+                            <span class="tag">Adventure</span>
+                            <span class="duration">4 Days, 3 Nights</span>
+                        </section>
+                        <section class="row3">
+                            <p class="card-name">Ansgar Scheffold</p>
+                        </section>
+                        <section class="row4">
+                            <p class="price">400$/Person</p>
+                            <button class="book-button">Book Now</button>
+                        </section>
                     </div>
                     <div class="offer-card">
-                        <img class="offer-img" src="./icons/lona_x.png" alr="mountain"/>
-                        <span class="vertical-text">22 DEC 2022</span>
-                        <span class="relax-tag">Relax</span>
-                        <span class="duration">7 Days, 6 Nights</span>
-                        <p class="card-name">Lona X</p>
-                        <p class="price">340$/Person</p>
-                        <button class="book-button">Book Now</button>
+                        <section class="row1">
+                            <img class="offer-img" src="./icons/lona_x.png" alr="mountain"/>
+                            <span class="vertical-text">22 DEC 2022</span>
+                        </section>
+                        <section class="row2">
+                            <span class="tag">Relax</span>
+                            <span class="duration">7 Days, 6 Nights</span>
+                        </section>
+                        <section class="row3">
+                            <p class="card-name">Lona X</p>
+                        </section>
+                        <section class="row4">
+                            <p class="price">340$/Person</p>
+                            <button class="book-button">Book Now</button>
+                        </section>
                     </div>
                 </div>
             </section>
             <section class="description">
-                <aside>
+                <section class="aside">
                     <img class="man-img" src="./icons/man.png" alt="damn man"/>
-                    <span class="extra-info">300+ DESTINATIONS</span>
-                    <span class="extra-info">5000+ TOURISTS</span>
-                    <span class="extra-info">150+ HOTELS</span>
-                </aside>
+                    <span class="extra-info1"><p>300+</p>DESTINATIONS</span>
+                    <span class="extra-info2"><p>5000+</p>TOURISTS</span>
+                    <span class="extra-info3"><p>150+</p>HOTELS</span>
+                </section>
                 <article class="descr-text">
                     <h3>Travel Any Corner of The World With Us</h3>
-                    <p>Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.
-                        Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+                    <p>Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+                    <p>Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
                     <button id="contact-info">Contact Us</button>
                 </article>
             </section>
@@ -131,25 +164,25 @@
                 <div class="rec-cards">
                     <div class="rec-card">
                         <img class="rec-img" src="./icons/kina1.png"/>
-                        <span class="rating">☆3.4</span>
+                        <span class="rating"><img class="star" src="./icons/star.svg"/>3.4</span>
                         <p class="rec-card-name">Kina Mountain</p>
                         <p class="rec-location-tag"><img class="loc-tag" src="./icons/loc_tag.png"/>Cambodia</p>
                     </div>
                     <div class="rec-card">
                         <img class="rec-img" src="./icons/kina2.png"/>
-                        <span class="rating">☆4.5</span>
+                        <span class="rating"><img class="star" src="./icons/star.svg"/>4.5</span>
                         <p class="rec-card-name">Kina Mountain</p>
                         <p class="rec-location-tag"><img class="loc-tag" src="./icons/loc_tag.png"/>Cambodia</p>
                     </div>
                     <div class="rec-card">
                         <img class="rec-img" src="./icons/kina3.png"/>
-                        <span class="rating">☆4.2</span>
+                        <span class="rating"><img class="star" src="./icons/star.svg"/>4.2</span>
                         <p class="rec-card-name">Kina Mountain</p>
                         <p class="rec-location-tag"><img class="loc-tag" src="./icons/loc_tag.png"/>Cambodia</p>
                     </div>
                     <div class="rec-card">
                         <img class="rec-img" src="./icons/kina4.png"/>
-                        <span class="rating">☆3.5</span>
+                        <span class="rating"><img class="start" src="./icons/star.svg"/>3.5</span>
                         <p class="rec-card-name">Kina Mountain</p>
                         <p class="rec-location-tag"><img class="loc-tag" src="./icons/loc_tag.png"/>Cambodia</p>
                     </div>
@@ -158,35 +191,37 @@
             <section class="comments">
                 <div class="comments-box">
                     <article class="comment">
+                        <img class="backg" src="./icons/quotes.svg">
                         <p class="comment-text">
                             Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
                         </p>
                         <a class="comment-link" href="#">-Vand D</a>
-                        <p>Happy Treloo</p>
+                        <p class="happy-trello">Happy Treloo</p>
+                        <div class="oval"></div>
                         <img class="comment-author" src="./icons/comment1.png" alt="comm"/>
-                        <span class="comm-author-rating">☆4.5</span>
+                        <span class="comm-author-rating"><img class="auth-star" src="./icons/star.svg"/>4.5</span>
                     </article>
                     <article class="comment">
+                        <img class="backg" src="./icons/quotes.svg">
                         <p class="comment-text">
                             Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
                         </p>
                         <a class="comment-link" href="#">-Tru Vio</a>
-                        <p>Happy Treloo</p>
+                        <p class="happy-trello">Happy Treloo</p>
+                        <div class="oval"></div>
                         <img class="comment-author" src="./icons/comment2.png" alt="comm"/>
-                        <span class="comm-author-rating">☆4.9</span>
+                        <span class="comm-author-rating"><img class="auth-star" src="./icons/star.svg"/>4.9</span>
                     </article>
                 </div>
                 <div class="comment-switch-buttons">
                     <button class="comm-switcher"><img src="./icons/arrow.svg"></button>
-                    <button class="comm-switcher"><img src="./icons/arrow.svg"></button>
+                    <button class="comm-switcher"><img class="arrow2" src="./icons/arrow.svg"></button>
                 </div>
             </section>
             <section class="discount">
-                <article>
-                    <img class="disc-back" src="./icons/disc_background.png" />
-                    <h3>Don’t Miss The 50% Discount if You register Today</h3>
-                    <button id="disc-button">Register Today</button>
-                </article>
+                <!-- <img class="disc-back" src="./icons/disc_background.png" /> -->
+                <h3>Don’t Miss The 50% Discount if You register Today</h3>
+                <button id="disc-button">Register Today</button>
             </section>
         </main>
         <footer class="footer">
